@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Componentes básicos de un laboratorio</title>
+    <link rel="icon" href="logo.png" type="image/x-icon">
+
+    <style>
+        body {
+            background-color: #B0E0E6;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0 20px;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #4682B4;
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .logo img {
+            height: 50px;
+        }
+
+        .nav__links {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+            padding: 0;
+        }
+
+        .nav__links a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .cta {
+            background-color: white;
+            color: #4682B4;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        h2, h3, h4, h5 {
+            text-decoration: underline;
+            color: #2F4F4F;
+        }
+
+        h1 {
+            color: #2F4F4F;
+        }
+
+        .marquesina {
+            color: #ffffff;
+            background-color: #4682B4;
+            padding: 10px;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        table td, table th {
+            border: 1px solid #999;
+            padding: 10px;
+            background-color: #ffffffb3;
+        }
+
+        .feed {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .card {
+            background-color: white;
+            width: 100px;
+            height: 100px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            max-width: 500px;
+            margin: 30px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        form label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        form input[type="text"],
+        form input[type="email"],
+        form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        form input[type="submit"] {
+            background-color: #4682B4;
+            color: white;
+            padding: 10px;
+            margin-top: 15px;
+            border: none;
+            border-radius: 5px;
+            width: 100%;
+            cursor: pointer;
+        }
+
+        form input[type="submit"]:hover {
+            background-color: #5a9bd3;
+        }
+
+        
+
+    </style>
+</head>
+
+<body>
+
+<header>
+    <a class="logo" href="/"><img src="logo.png" alt="logo"></a>
+    <nav>
+        <ul class="nav__links">
+            <li><a href="#Asignatura">Asignaturas</a></li>
+            <li><a href="#Imagenes">Imágenes</a></li>
+            <li><a href="#Horario">Horarios</a></li>
+        </ul>
+    </nav>
+    <a class="cta" href="#formulario">Formulario</a>
+</header>
+
+<div>
+    <marquee class="marquesina">LABORATORISTAS QUÍMICOS</marquee>
+    <p>Los conocimientos básicos de laboratorio incluyen familiarización con el equipo, técnicas de medición, normas de seguridad, y conocimientos de química y biología.</p>
+</div>
+
+<div>
+    <h2>Seguridad en el laboratorio</h2>
+    <p>Normas para trabajar de manera segura:</p>
+    <ol>
+        <li>No se permite comer, beber o maquillarse.</li>
+        <li>No almacenar alimentos junto a sustancias químicas.</li>
+        <li>No bloquear rutas de escape.</li>
+    </ol>
+    <ul>
+        <li>Lectura de protocolos</li>
+        <li>Uso correcto de reactivos</li>
+        <li>Calibración de equipos</li>
+        <li>Registro y limpieza</li>
+        <li>Separación de residuos</li>
+        <li>Comunicación y reporte de incidentes</li>
+    </ul>
+</div>
+
+<div id="Asignatura" class="tabla">
+    <h3>Docentes & Asignaturas en el área de laboratorista químico</h3>
+    <table>
+        <tr>
+            <td>Asignatura</td>
+            <td>Docentes</td>
+        </tr>
+        <tr><td>T.S.MATE</td><td>Ing. Alma Santiago</td></tr>
+        <tr><td>ESPACIO Y SOCIEDAD</td><td>Ing. Francisco Lagunes</td></tr>
+        <tr><td>REACCIONES QUIMICAS</td><td>Lic. Isaura Marquez</td></tr>
+        <tr><td>CONCIENCIA HISTORICA</td><td>Lic. Gustavo Macedonio</td></tr>
+        <tr><td>PENSAMIENTO LITERARIOS</td><td>Lic. Edgar Urrutia</td></tr>
+        <tr><td>INGLES</td><td>Mtra. Elena Wong</td></tr>
+        <tr><td>TECNICAS Y TECNOLOGIAS</td><td>Ing. Violeta Gómez</td></tr>
+        <tr><td>ANALISIS CUANTITATIVOS</td><td>Ing. Violeta Gómez</td></tr>
+        <tr><td>TALLER DE CULTURA</td><td>Dra. Itchel Villanueva</td></tr>
+        <tr><td>C. SOCIALES</td><td>Mtra. Margarita Campomanes</td></tr>
+        <tr><td>AMBITO SOCIOEMOCIONAL</td><td></td></tr>
+        <tr><td>EDUCACION INTEGRAL</td><td>Lic. Miriam </td></tr>
+    </table>
+</div>
+
+<div>
+    <h3>Equipos de laboratorio</h3>
+    <ol>
+        <li>Balanzas</li>
+        <li>Pipetas</li>
+        <li>Matraces</li>
+        <li>Espectrofotómetros</li>
+    </ol>
+</div>
+
+<br><br>
+
+<div id="Horario">
+    <h3>Ejemplos de Horario del Area Laboratorista Quimico</h3>
+
+    <table>
+        <tr>
+            <td>HORA</td>
+            <td>LUNES</td>
+            <td>MARTES</td>
+            <td>MIERCOLES</td>
+            <td>JUEVES</td>
+            <td>VIERNES</td>
+        </tr>
+        <tr>
+            <td>11:40-12:30</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>Laboratorio Quimico</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>12:30-13:20</td>
+            <td>Ingles IV</td>
+            <td>C. Sociales III</td>
+            <td>Ambito Socioemocional</td>
+            <td></td>
+            <td>Espacio y Sociedad</td>
+        </tr>
+        <tr>
+            <td>13:30-14:20</td>
+            <td>Ingles IV</td>
+            <td>C. Sociales III</td>
+            <td>Ambito Socioemocional</td>
+            <td>Taller de Cult. Dig</td>
+            <td>Analisis Cuantitativos </td>
+        </tr>
+        <tr>
+            <td>14:20-15:10</td>
+            <td>Tecnicas y Tecnologias</td>
+            <td>Ingles IV</td>
+            <td>Ambito Socioemocional</td>
+            <td>Pensamiento Literario</td>
+            <td>Analisis Cuantitativos</td>
+        </tr>
+        <tr>
+            <td>15:10-16:00</td>
+            <td>Tecnicas y Tecnologias</td>
+            <td>T. S Mate</td>
+            <td>T. S Mate</td>
+            <td>Pensamiento Literario</td>
+            <td>Analisis Cuantitativos</td>
+        </tr>
+        <tr>
+            <td>16:00-16:20</td>
+            <td>R E</td>
+            <td>C</td>
+            <td>E</td>
+            <td>S</td>
+            <td>O</td>
+        </tr>
+        <tr>
+            <td>16:30-17:20</td>
+            <td>T . S Mate</td>
+            <td>Conciencia Histotica</td>
+            <td>Conciencia Histotica</td>
+            <td>Conciencia Histotica</td>
+            <td></td>
+        </tr>
+        <tr>
+        <td>17:20-18:10</td>
+        <td>Pensamiento Literario</td>
+        <td>Tecnicas y Tecnologias</td>
+        <td></td>
+        <td>Espacio y Sociedad</td>
+        <td>Educ. Integral</td>
+        </tr>
+        <tr>
+            <td>18:10-19:00</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>Espacio y Sociedad</td>
+            <td>T . S Mate</td>
+        </tr>
+    </table>
+</div>
+
+<br><br>
+<div>
+    <h4>1. Técnicas de análisis químico</h4>
+    <ul>
+        <li>Titulación </li>
+        <li>Cromatografía </li>
+        <li>Espectroscopía </li>
+        <li>Análisis gravimétrico</li>
+    </ul>
+</div>
+
+<div>
+    <h5>Normas de gestión ambiental en laboratorios</h5>
+    <p>Prácticas para minimizar el impacto ambiental y la correcta disposición de residuos químicos.</p>
+</div>
+
+<div>
+    <h2>Seguridad en laboratorios químicos</h2>
+    <p>Es obligatorio usar bata, gafas de seguridad y guantes al trabajar en un laboratorio químico.</p>
+</div>
+
+<h2>Muestras de procedimientos</h2>
+
+<img src="images/img1.jfif" width="25%" alt="Descripción de la imagen">
+<img src="images/img2.jfif" width="25%" alt="Descripción de la imagen">
+<img src="images/img3.jfif" width="25%" alt="Descripción de la imagen">
+<img src="images/img4.jfif" width="25%" alt="Descripción de la imagen">
+<img src="images/img5.jfif" width="25%" alt="Descripción de la imagen">
+<img src="images/img7.jfif" width="25%" alt="Descripción de la imagen">
+
+<br><br>
+<h4>Enlaces de interés</h4>
+<ul>
+    <li><strong>Real Sociedad Española de Química:</strong><br><a href="https://rseq.org/" target="_blank">Click aquí</a></li>
+    <li><strong>Foro Química y Sociedad:</strong><br><a href="http://www.quimicaysociedad.org" target="_blank">Click aquí</a></li>
+</ul>
+
+<!-- FORMULARIO -->
+<form id="formulario" action="procesar.php" method="POST">
+    <h2>Contáctanos</h2>
+    <label for="nombre">Nombre:</label>
+    <input type="text" name="nombre" id="nombre" required>
+
+    <label for="email">Correo electrónico:</label>
+    <input type="email" name="email" id="email" required>
+
+    <label for="mensaje">Mensaje:</label>
+    <textarea name="mensaje" id="mensaje" rows="5" required></textarea>
+
+    <input type="submit" value="Enviar">
+</form>
+
+</body>
+</html>
